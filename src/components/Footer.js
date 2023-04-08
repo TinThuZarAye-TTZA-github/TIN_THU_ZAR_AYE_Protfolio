@@ -25,7 +25,7 @@ function Footer() {
             in Computer Science from San Francisco State University. My favorite
             programming languages are Java and JavaScript. My favorite library
             for the JavaScript is React and favorite framework for the backend
-            is Spring Boot.
+            is Spring-Boot.
           </p>
 
           <div className='social'>

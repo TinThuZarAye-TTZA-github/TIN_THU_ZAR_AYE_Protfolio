@@ -9,5 +9,3 @@ root.render(
     <App />
   </HashRouter>
 );
-
-// /Users/tinthuzaraye/Desktop/TINTHUZARAYE-Protfolio/protfolio/src/index.js

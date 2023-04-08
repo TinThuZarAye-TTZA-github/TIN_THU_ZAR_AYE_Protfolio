@@ -14,7 +14,7 @@ const CardData = [
   {
     imagesrc: springboot,
     title: 'Spring Boot CRUD operation',
-    text: 'Implemented CRUD operation which are "GET", "POST","PUT", "DELETE" with Java, Spring Boot, MySQL and Postman',
+    text: 'Implemented CRUD operation which are "GET", "POST","PUT", "DELETE" using Java, Spring Boot, MySQL and Postman',
     techStack: 'Java, Spring Boot, MySQL, Postman',
     demo: 'https://youtu.be/5PsKC6Uvyyg',
     github: 'https://github.com/TinThuZarAye-TTZA-github/SpringBoot-CURD',

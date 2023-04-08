@@ -21,8 +21,11 @@ function Footer() {
         <div className='right'>
           <h4 style={{ color: 'black' }}>About me</h4>
           <p style={{ color: 'black', fontSize: '18px' }}>
-            My name is Tin Thu Zar Aye. I am a recent grad from San Francisco
-            State Univeristy with Computer Science major.
+            My name is Tin Thu Zar Aye. I am a recent graduate with Bachelor's
+            in Computer Science from San Francisco State University. My favorite
+            programming languages are Java and JavaScript. My favorite library
+            for the JavaScript is React and favorite framework for the backend
+            is Spring Boot.
           </p>
 
           <div className='social'>

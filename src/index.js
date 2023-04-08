@@ -9,3 +9,5 @@ root.render(
     <App />
   </BrowserRouter>
 );
+
+// /Users/tinthuzaraye/Desktop/TINTHUZARAYE-Protfolio/protfolio/src/index.js

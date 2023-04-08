@@ -1,4 +1,3 @@
-import image1 from '../assets/background-image.png';
 import emailSurvey from '../assets/Email-Survey.png';
 import htmlcss from '../assets/HTMLCSS.png';
 import springboot from '../assets/springBoot.png';

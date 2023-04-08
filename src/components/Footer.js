@@ -22,10 +22,7 @@ function Footer() {
           <h4 style={{ color: 'black' }}>About me</h4>
           <p style={{ color: 'black', fontSize: '18px' }}>
             My name is Tin Thu Zar Aye. I am a recent graduate with Bachelor's
-            in Computer Science from San Francisco State University. My favorite
-            programming languages are Java and JavaScript. My favorite library
-            for the JavaScript is React and favorite framework for the backend
-            is Spring-Boot.
+            in Computer Science from San Francisco State University.
           </p>
 
           <div className='social'>

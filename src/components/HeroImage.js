@@ -5,7 +5,7 @@ import NavBar from './NavBar';
 import TechStack from './TechStack';
 function HeroImage() {
   const resumeURL =
-    'https://drive.google.com/file/d/1CBOvbJDdSE3Uz8VDPzvMHX4zpxklkMqp/view?usp=drive_link';
+    'https://drive.google.com/file/d/18VDn8BJJC0Vj6-1woV9mCu0iYpCkzEIe/view?usp=drive_link';
   return (
     <div className='hero'>
       <NavBar />

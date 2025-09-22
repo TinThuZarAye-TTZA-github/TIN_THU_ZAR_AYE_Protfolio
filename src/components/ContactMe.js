@@ -43,7 +43,7 @@ function ContactMe() {
 
               My name is Tin Thu Zar Aye.
             I graduated with Bachelor's in Computer Science from San Francisco State University
-            and I am currently pursing Master's of Science in Artificial Intelligence at San Jose State University.</p>
+            and currently I am pursing Master's of Science in Artificial Intelligence at San Jose State University.</p>
 
           <p style={{color: "black", textAlign:"center"}}>
             I am passionate about Software Development and continuously learning new technologies including AI-powered Web Development.

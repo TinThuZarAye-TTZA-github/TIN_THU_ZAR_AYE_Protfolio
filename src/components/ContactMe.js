@@ -46,7 +46,7 @@ function ContactMe() {
             and currently I am pursing Master's of Science in Artificial Intelligence at San Jose State University.</p>
 
           <p style={{color: "black", textAlign:"center"}}>
-            I am passionate about Software Development and continuously learning new technologies including AI-powered Web Development.
+            Passionate about Software Development and continuously learning new technologies including AI-powered Web Development.
             My curiosity extends into Artificial Intelligence and Machine Learning where I explore how these technologies can transform the way we build,
             optimize and personalize web applications. I am eager to apply AI-driven approachs to create smarter, scalable and innovative solutions
             that improve user experience and deliver meaningful impact.

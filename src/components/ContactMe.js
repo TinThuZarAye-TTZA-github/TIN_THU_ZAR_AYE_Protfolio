@@ -1,6 +1,6 @@
 import '../style/ContactMe.css';
 import { FaGithub, FaLinkedin, FaMailBulk, FaPhone, FaRegUser } from 'react-icons/fa';
-import EmailForm from './EmailForm';
+// import EmailForm from './EmailForm';
 import NavBar from './NavBar';
 
 function ContactMe() {

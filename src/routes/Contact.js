@@ -1,5 +1,5 @@
 import ContactMe from '../components/ContactMe';
-import Footer from '../components/Footer';
+// import Footer from '../components/Footer';
 
 function Contact() {
   return (

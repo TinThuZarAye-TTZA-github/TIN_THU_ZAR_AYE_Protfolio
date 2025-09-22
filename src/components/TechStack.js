@@ -5,6 +5,7 @@ import {
   FaJava,
   FaJs,
   FaNodeJs,
+  FaPython,
   FaReact,
 } from 'react-icons/fa';
 import { SiMongodb, SiMysql, SiSpring } from 'react-icons/si';
@@ -18,6 +19,8 @@ function TechStack() {
         <FaJava size={30} style={{ marginRight: '3rem' }} />
         JavaScript
         <FaJs size={30} style={{ marginRight: '3rem' }} />
+        Python
+        <FaPython size={30} style={{marginRight : '3rem'}}/>
         HTML
         <FaHtml5 size={30} style={{ marginRight: '3rem' }} />
         CSS

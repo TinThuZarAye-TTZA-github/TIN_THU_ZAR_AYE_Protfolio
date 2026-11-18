@@ -1,24 +1,237 @@
+
 .techStack {
-  padding-top: 2rem;
-  padding-bottom: 5rem;
-  background-color: rgb(252, 249, 244);
+  width: 95%;
+  max-width: 1600px;
+  min-height: 750px;
+  margin: 40px auto;
+  padding: 60px 65px 100px;
+  box-sizing: border-box;
+
+  background-color: #faf8f5;
   border-radius: 50%;
-  margin-left: 25%;
-  margin-right: 20%;
-}
-.techStack-h1 {
+
   text-align: center;
-  padding-bottom: 1.5rem;
-  color: black;
 }
 
-.techStack-p {
-  text-align: center;
-  word-spacing: 30px;
-  font-size: 18px;
+.techStack-h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
   color: black;
-  line-height: 100px;
+  margin: 0 0 75px;
 }
-.techStack-p:hover {
-  color: #00859c;
+
+/* Display skills horizontally */
+.techStack-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 55px 15px;
+  width: 100%;
+  align-items: center;
 }
+
+/* Individual skill */
+.techStack-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: black;
+  white-space: nowrap;
+}
+
+.techStack-icon {
+  display: inline-flex;
+  align-items: center;
+  font-size: 28px;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+  .techStack {
+    border-radius: 30%;
+    padding: 60px 30px;
+  }
+
+  .techStack-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 35px 15px;
+  }
+
+  .techStack-item {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .techStack {
+    min-height: auto;
+    border-radius: 30px;
+    padding: 40px 15px;
+  }
+
+  .techStack-h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+
+  .techStack-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px 10px;
+  }
+
+  .techStack-item {
+    font-size: 0.9rem;
+    white-space: normal;
+    flex-wrap: wrap;
+  }
+
+  .techStack-icon {
+    font-size: 24px;
+  }
+}
+
+/* Skill entrance animation */
+@keyframes skillFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Floating icons */
+@keyframes iconFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+/* Animate when section becomes visible */
+.techStack-grid.is-visible .techStack-item {
+  animation: skillFadeUp 0.7s ease-out both;
+}
+
+/* Stagger each skill */
+.techStack-grid.is-visible .techStack-item:nth-child(5n + 1) {
+  animation-delay: 0.1s;
+}
+
+.techStack-grid.is-visible .techStack-item:nth-child(5n + 2) {
+  animation-delay: 0.2s;
+}
+
+.techStack-grid.is-visible .techStack-item:nth-child(5n + 3) {
+  animation-delay: 0.3s;
+}
+
+.techStack-grid.is-visible .techStack-item:nth-child(5n + 4) {
+  animation-delay: 0.4s;
+}
+
+.techStack-grid.is-visible .techStack-item:nth-child(5n + 5) {
+  animation-delay: 0.5s;
+}
+
+/* Floating technology icons */
+.techStack-grid.is-visible .techStack-icon {
+  animation: iconFloat 3s ease-in-out infinite;
+}
+
+/* Hover effect */
+.techStack-item {
+  cursor: default;
+  transition:
+    color 0.3s ease,
+    scale 0.3s ease;
+}
+
+.techStack-item:hover {
+  color: #00869a;
+  scale: 1.12;
+}
+
+.techStack-item:hover .techStack-icon {
+  animation-play-state: paused;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .techStack-item,
+  .techStack-icon {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Smooth transition for the entire oval */
+.techStack {
+  transition:
+    background-color 0.6s ease,
+    transform 0.5s ease,
+    box-shadow 0.5s ease;
+}
+
+/* Hover over the oval */
+.techStack:hover {
+  background-color: #dff5f3;
+  transform: scale(1.015);
+  box-shadow: 0 15px 45px rgba(0, 134, 154, 0.12);
+}
+
+/* Smooth text and icon color transition */
+.techStack-item,
+.techStack-icon,
+.techStack-h1 {
+  transition:
+    color 0.4s ease,
+    scale 0.3s ease;
+}
+
+/* Change skill text and icons when hovering over oval */
+.techStack:hover .techStack-item {
+  color: #007f91;
+}
+
+/* Change heading color */
+.techStack:hover .techStack-h1 {
+  color: #005f70;
+}
+
+/* Faster floating icons on oval hover */
+.techStack:hover .techStack-icon {
+  animation: iconFloat 1.4s ease-in-out infinite;
+}
+
+/* Individual skill hover */
+.techStack .techStack-item:hover {
+  color: #004e60;
+  scale: 1.15;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .techStack,
+  .techStack-item,
+  .techStack-icon,
+  .techStack-h1 {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .techStack:hover {
+    transform: none;
+  }
+}
+

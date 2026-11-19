@@ -14,7 +14,7 @@ function HeroImage() {
       </div>
       <div className='content'>
         <h1>Tin Thu Zar Aye</h1>
-        <h2>Junior Software Engineer</h2>
+        <h2>Software Engineer</h2>
         <div>
           <Link className='btn' to={resumeURL} target='_blank' download>
             Resume
